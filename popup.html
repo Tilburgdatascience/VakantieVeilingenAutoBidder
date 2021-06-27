@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/popup.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="menuFrame">
+        <p>VakantieVeilingen Auto Bidder</p>
+        <i>Made by: Max Liebe</i>
+        <br>
+        <b style="color: red">WARNING: ONLY ACTIVATE THIS BOT ONCE YOU'RE AT THE AUCTION YOU WANT TO WIN!</b>
+        <span>This bot will stop once it has won an auction.</span>
+        <br>
+        <label for="botEnabled" class="inputLabel">Bot enabled:</label>
+        <input type="checkbox" id="botEnabled" class="inputField" name="botEnabled"/>
+        <label for="bidPrice" class="inputLabel">Bidding price (in euro)</label>
+        <input name="bidPrice" id="bidPrice" class="inputField" type="text" placeholder="0"/>
+        <label for="timeBeforeEnd"  class="inputLabel">Time before end (in seconds)</label>
+        <input name="timeBeforeEnd" min="1" max="59" id="timeBeforeEnd" class="inputField" type="number" placeholder="2"/>
+        <label for="userName"  class="inputLabel">Your name on VakantieVeilingen</label>
+        <input name="userName" id="userName" class="inputField" type="text" placeholder="Your Name"/>
+        <button id="saveConfig">Save settings</button>
+        <span>Disclaimer:</span>
+        <p>I am not affiliated with VakantieVeilingen.nl, Emesa Nederland BV or any of its partners.</p>
+        <p>This bot was made for educational purposes only.</p>
+    </div>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
