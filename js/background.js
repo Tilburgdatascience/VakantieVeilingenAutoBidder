@@ -16,10 +16,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 function updateUIEnabled() {
     chrome.storage.sync.get(['botEnabled'], function(data) {
         if(data.botEnabled) {
-            chrome.browserAction.setBadgeBackgroundColor({ color: '#4cae4c'});
             chrome.browserAction.setBadgeText({text:'✓'});
         }else{
-            chrome.browserAction.setBadgeBackgroundColor({ color: '#f9615c'});
             chrome.browserAction.setBadgeText({text:'□'});
         }
     });
